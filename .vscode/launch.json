@@ -1,0 +1,20 @@
+{
+  "name": "Debug CRA Tests",
+  "type": "node",
+  "request": "launch",
+  "port":9229,
+  "runtimeExecutable": "${workspaceRoot}/main/node_modules/.bin/react-scripts",
+  "runtimeArgs": [
+    "--inspect-brk",
+    "test"
+  ],
+  "args": [
+    "--runInBand",
+    "--no-cache",
+    "--env=jsdom"
+  ],
+  "cwd": "${workspaceRoot}/main",
+  "protocol": "inspector",
+  "console": "integratedTerminal",
+  "internalConsoleOptions": "neverOpen"
+},

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ShowText extends Component {
 
   state = {
-    showText: false
+    showText: true
   }
 
   toggleText = () => {
@@ -12,13 +12,13 @@ class ShowText extends Component {
 
   render() { 
     return ( 
-      <>
+      <div>
         testbcvbcvbc <button type="button" onClick={() => this.toggleText()}>click</button>
 
         <hr />
 
-        { this.state.showText && <span>this is text to show</span>}
-      </>
+        { this.state.showText && <span class="text">this is text to show</span>}
+      </div>
      );
   }
 }
