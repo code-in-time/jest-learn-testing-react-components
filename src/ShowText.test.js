@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() });
 describe('Test the show text component', () => {
   it('should test if there is text', () => {
     const wrapper = shallow(<ShowText/>);
-    const texts = wrapper.find('span');
+    const texts = wrapper.find('span.text');
     expect(texts.text()).toBe('this is text to show')
   });
 

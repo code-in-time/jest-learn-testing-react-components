@@ -17,7 +17,7 @@ class ShowText extends Component {
 
         <hr />
 
-        { this.state.showText && <span class="text">this is text to show</span>}
+        { this.state.showText && <span className="text">this is text to show</span>}
       </div>
      );
   }
