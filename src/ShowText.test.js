@@ -2,6 +2,7 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import ShowText from './ShowText';
+import renderer from 'react-test-renderer';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -24,3 +25,9 @@ describe('Test the show text component', () => {
   });
 });
 
+
+// test the snapshot
+it('Matched snapshot', () => {
+  const tree = renderer.create(<ShowText />).toJSON()
+  expect(tree).toMatchSnapshot();
+});

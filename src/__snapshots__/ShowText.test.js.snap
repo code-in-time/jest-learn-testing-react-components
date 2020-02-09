@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matched snapshot 1`] = `
+<div>
+  testbcvbcvbc 
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    click
+  </button>
+  <hr />
+  <span
+    className="text"
+  >
+    this is text to show
+  </span>
+</div>
+`;
